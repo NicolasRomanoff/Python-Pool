@@ -42,15 +42,9 @@ NESTED_MORSE = {
 }
 
 
-def main():
+def sos():
     '''
     Translate a sentence into Morse code
-
-    Args:
-        param1 (str): A string that will be translated into Morse code
-
-    Returns:
-        None
     '''
     try:
         assert len(sys.argv) == 2, \
@@ -65,4 +59,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    sos()

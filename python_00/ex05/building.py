@@ -2,26 +2,14 @@ import sys
 import string
 
 
-def main():
+def building():
     '''
-    Displays the sums of param1 of:
-        - all characters
-        - upper-case characters
-        - lower-case characters
-        - punctuation characters
-        - spaces
-        - digits
-
-    Args:
-        param1 (str): A string on which the counting will be done
-
-    Returns:
-        None
+    Displays information about string
     '''
     if len(sys.argv) < 2:
         str = sys.stdin.read()
     else:
-        str = sys.argv[1:]
+        str = sys.argv[1]
     try:
         assert len(sys.argv) <= 2, \
           "AssertionError: more than one argument is provided"
@@ -37,4 +25,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    building()

@@ -4,34 +4,18 @@ from ft_filter import ft_filter
 
 def is_alphanumeric_space(s: str):
     '''
-    Check if a string doesn't contains any other characters then a :
-        - letters
-        - numbers
-        - spaces
-
-    Args:
-        param1 (str): The string need to be check
-
-    Returns:
-        bool:
+    If only alphanumeric and space characters
     '''
     return len(list(ft_filter(lambda c: c.isalnum() or c == " ", s))) == len(s)
 
 
-def main():
+def filterstring():
     '''
-    Output a list of words from param1 that have a length greater than param2:
-
-    Args:
-        param1 (str): A string containing one or more words separated by spaces
-        param2 (int): A number to sort words by if their size is greater
-
-    Returns:
-        list: A list of param1 words's larger than the number in param2
+    Output a list of words greater than number
     '''
     try:
         assert len(sys.argv) == 3, \
-            "AssertionError: the program needs only 2 parameters"
+            "AssertionError: the program needs 2 parameters"
         assert type(sys.argv[1]) is str \
             and is_alphanumeric_space(sys.argv[1]), \
             "AssertionError: the first parameter is not a valid string"
@@ -47,4 +31,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    filterstring()

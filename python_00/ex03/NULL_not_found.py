@@ -2,7 +2,7 @@ from types import NoneType
 
 
 def NULL_not_found(object: any) -> int:
-    if object == object and object:
+    if object and object == object:
         print("Type not found")
         return 1
     try:
@@ -12,6 +12,8 @@ def NULL_not_found(object: any) -> int:
                        str: "Empty:",
                        bool: f'Fake: {object}'}
         typeOf = type(object)
+        if typeOf not in dictionnary:
+            raise TypeError
         response = dictionnary[typeOf]
         print(f'{response} {typeOf}')
     except TypeError:
