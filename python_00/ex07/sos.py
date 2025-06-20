@@ -42,7 +42,7 @@ NESTED_MORSE = {
 }
 
 
-def sos():
+def main():
     '''
     Translate a sentence into Morse code
     '''
@@ -59,4 +59,4 @@ def sos():
 
 
 if __name__ == "__main__":
-    sos()
+    main()

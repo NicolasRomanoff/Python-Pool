@@ -2,7 +2,7 @@ import sys
 import string
 
 
-def building():
+def main():
     '''
     Displays information about string
     '''
@@ -25,4 +25,4 @@ def building():
 
 
 if __name__ == "__main__":
-    building()
+    main()

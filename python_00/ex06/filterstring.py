@@ -9,7 +9,7 @@ def is_alphanumeric_space(s: str):
     return len(list(ft_filter(lambda c: c.isalnum() or c == " ", s))) == len(s)
 
 
-def filterstring():
+def main():
     '''
     Output a list of words greater than number
     '''
@@ -31,4 +31,4 @@ def filterstring():
 
 
 if __name__ == "__main__":
-    filterstring()
+    main()
