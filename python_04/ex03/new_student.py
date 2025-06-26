@@ -13,7 +13,7 @@ class Student:
     '''Class about student'''
     name: str = field()
     surname: str = field()
-    active: bool = field(init=False, default=True)
+    active: bool = field(default=True)
     login: str = field(init=False)
     id: str = field(init=False, default_factory=generate_id)
 

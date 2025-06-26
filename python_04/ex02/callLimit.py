@@ -13,9 +13,8 @@ def callLimit(limit: int):
                 if count >= limit:
                     raise Exception(f"Error: {function} " +
                                     "call too many times")
-                function()
                 count += 1
-                return count
+                return function(*args, **kwds)
             except Exception as e:
                 print(e)
         return limit_function
