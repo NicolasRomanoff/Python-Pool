@@ -1,4 +1,4 @@
-def all_thing_is_obj(object: any) -> int:
+def all_thing_is_obj(object) -> int:
     try:
         dictionnary = {list: "List",
                        tuple: "Tuple",

@@ -1,7 +1,7 @@
 from types import NoneType
 
 
-def NULL_not_found(object: any) -> int:
+def NULL_not_found(object) -> int:
     if object and object == object:
         print("Type not found")
         return 1
